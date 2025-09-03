@@ -13,7 +13,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       withGlobalStyles
       withNormalizeCSS
       theme={{
-        globalStyles: (_theme) => ({
+          primaryColor: 'bright-pink',
+          colors: {
+            'bright-pink': ['#F0BBDD', '#ED9BCF', '#EC7CC3', '#ED5DB8', '#F13EAF', '#F71FA7', '#FF00A1', '#E00890', '#C50E82', '#AD1374'],
+          },
+          globalStyles: (_theme) => ({
           body: {
             width: "100vw",
             height: "100vh",
@@ -21,19 +25,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           "#root": {
             width: "100%",
             height: "100%",
-          },
-          colors:  [
-            '#faedff',
-            '#edd9f7',
-            '#d8b1ea',
-            '#c186dd',
-            '#ae62d2',
-            '#a34bcb',
-            '#9d3fc9',
-            '#8931b2',
-            '#7a2aa0',
-            '#6b218d' 
-          ]
+          }
         }),
       }}
     >
