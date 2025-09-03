@@ -7,7 +7,7 @@ import { CharacterAnimationsProvider } from "./contexts/CharacterAnimations";
 import { CharacterCustomizationProvider } from "./contexts/CharacterCustomizationContext";
 
 
-const myColor: MantineColorsTuple = [
+const myColor = [
   '#faedff',
   '#edd9f7',
   '#d8b1ea',
@@ -19,15 +19,6 @@ const myColor: MantineColorsTuple = [
   '#7a2aa0',
   '#6b218d'
 ];
-
-function Demo() {
-  return (
-    <MantineProvider theme={theme}>
-      {/* Your app here */}
-    </MantineProvider>
-  );
-}
-
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
