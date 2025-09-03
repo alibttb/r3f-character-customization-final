@@ -7,19 +7,6 @@ import { CharacterAnimationsProvider } from "./contexts/CharacterAnimations";
 import { CharacterCustomizationProvider } from "./contexts/CharacterCustomizationContext";
 
 
-const myColor = [
-  '#faedff',
-  '#edd9f7',
-  '#d8b1ea',
-  '#c186dd',
-  '#ae62d2',
-  '#a34bcb',
-  '#9d3fc9',
-  '#8931b2',
-  '#7a2aa0',
-  '#6b218d'
-];
-
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <MantineProvider
@@ -35,9 +22,18 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             width: "100%",
             height: "100%",
           },
-          colors: {
-            myColor,
-          }
+          colors:  [
+            '#faedff',
+            '#edd9f7',
+            '#d8b1ea',
+            '#c186dd',
+            '#ae62d2',
+            '#a34bcb',
+            '#9d3fc9',
+            '#8931b2',
+            '#7a2aa0',
+            '#6b218d' 
+          ]
         }),
       }}
     >
